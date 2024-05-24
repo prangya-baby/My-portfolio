@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- header section -->
+    <div id="header">
+        <img src="images/babysah.jpg" alt="Profile">
+        <div class="container">
+            <nav class="nav-list">
+                <h2 class="logo">Portfo<span>lio.</span></h2>
+                <ul class="nav-link" id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+              
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                
+
+            </nav>
+            <div class="header-text">
+                <h2>Hello,</h2>
+                <h1 class="name">I am <span>Prangya.</span></h1>
+                <h2>Web Developer</h2>
+                <p>My name is Prangya Paramita Sahoo,an expert in Front end Development.
+                    <br>
+                    Passionate Programmer
+                    <br>
+                    STUDENT||CODER||DEVELOPER
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/prangyaS.jpg" alt="Profile">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a BCA student with a passion for Web development.I enjoy creating dynamic and user-friendly websites that bring ideas to life.My journey in the field of technology has been exciting and rewarding, as a continually strive to enhance my skills and stay updated with the latest trends in web development.I am dedicated,creative,and always eager to take on <br>new challenges in the digital realm.With a strong foundation in computer applications and knack for coding, I am on a mission to make positive impact through innovative web solutions.</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li> HTML</li>
+                            <li>CSS</li>
+                            <li>JAVASCRIPT</li>
+                            <li>REACT</li>
+                            <li>BOOTSTRAP</li>
+                            <li>C</li>
+                            <li>C++</li>
+                            <li>JAVA</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>2020 &nbsp;-<span> &nbsp;10th from BSE Board</span></li>
+                            <li>2020-2022 &nbsp;- <span>+2 from CHSE Board </span></li>
+                            <li>2022-2025 &nbsp;- <span>BCA from NC Autonomous College</span></li>
+                           
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+<!-- services -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I can service web Design.Weather you need a modern and user-friendly website for your business,a blog platform for your personal brand,or an online portfolio to showcase your work, I can help bring your vision to life.Let's work together to create a visual stunning and functional website that reflects your brand identity and achieve your goals.</p>
+                <a href="#projects">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                 <p>I can service web development needs with expertise in designing and building websites that are user-friendly, responsive, and visually appealing. My skills range from front-end development to back-end. Whether you need a simple static website, an e-commerce platform, or a complex web application, I can help bring your vision to life. Let's collaborate to create a professional and functional website that meets your specific requirements.</p> 
+                <a href="#projects">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- projects section -->
+<div id="projects">
+    <div class="container">
+        <h2 class="sub-title">My Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <img src="images/work-1.png" >
+                <div class="layer">
+                    <h3>Social Media Clone</h3>
+                    <p> To create a Social clone using HTML and CSS.This social media includes creating header bars,profile sections,like and comment buttons and more.</p>
+                    <a href="https://github.com/prangya-baby/Socialmedia-clone"><i class="fa-solid fa-link"></i></a>
+                </div>
+
+            </div>
+            <div class="project">
+                <img src="images/work-2.png" >
+                <div class="layer">
+                    <h3>TIC-TAC-TOE Game</h3>
+                    <p>For a TIC-TAC-TOE game using HTML,CSS and JS,I have create a simple layout with a 3*3 grid representing the game board.</p>
+                    <a href="https://github.com/prangya-baby/TIC-TAC-TOE"><i class="fa-solid fa-link"></i></a>
+                </div>
+
+            </div>
+            <div class="project">
+                <img src="images/work-3.png" >
+                <div class="layer">
+                    <h3>Amazon clone</h3>
+                    <p>To create an Amazon clone using  HTML and CSS, I have designed a layout that closely resembles  the amazon website.</p>
+                    <a href="https://github.com/prangya-baby/amazon-project"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/prangya-baby/" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- contact section -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                <p> <i class="fa-solid fa-phone"></i>0123456789</p>
+                <div class="social-icons">
+                    <a href="https://github.com/prangya-baby/"><i class="fa-brands fa-github"></i></a>
+
+                    <a href="https://www.linkedin.com/in/prangya-paramita-sahoo-258736305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+
+
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                 
+
+               
+
+                <a href="images/sahooprangyapramita_Resume.pdf" download class="btn btn2">Download Resume</a>
+            
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter Your Name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Write a Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit Here</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!-- footer section -->
+<div class="copy-right">
+    <p class="para fill-white">Copyright &copy;2024 prangya paramita sahoo. <i class="fa-solid fa-heart"></i> All rights reserved.</p>
+</div>
+
+
+
+
+
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-400px";
+        }
+    </script>
+    </body>
+    </html>
+</body>
+</html>
